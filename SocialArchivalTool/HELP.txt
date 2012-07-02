@@ -1,0 +1,10 @@
+Before running:
+While this program will run "out of the box" it is recommended that you change the ENCRYPTION_STR variable in the DesEncrypter.java file then recompile before use for added security.
+For help in navigating the menus visit the help tab in the program.
+
+To start run the jar file as an executable, start.sh contains the function needed to run the jar using terminal.
+To compile unjar the jar file and make updates to the source as needed, the functions used to compile and re-jar can be found in the compile.sh file.
+To change how the program runs, edit the values saved in the options.txt file that is generated after the first run.
+-This is where you can set to have the program run on a timed update by setting timedUpdate=true and timedUpdateTime=<time>.
+
+If you need assistance with the program or have any questions or suggestions feel free to contact the ngtoc web team at ngtocweb@usgs.gov, any and all feedback is appreciated.

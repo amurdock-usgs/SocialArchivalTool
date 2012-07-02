@@ -1,0 +1,4 @@
+1.0
+-fixed a bug where the folders were stored in a directory aside from the directory the jar is located in by default
+-moved the tool to a github based serving, available to the public
+-updated relevant naming and urls required for github hosting
