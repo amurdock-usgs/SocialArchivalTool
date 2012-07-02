@@ -2,12 +2,14 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.io.*;
-import java.awt.*;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
 
 /**	Logs class.  This class is designed to write new entries to log files and save the log files.	**/
 

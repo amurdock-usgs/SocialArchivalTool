@@ -2,12 +2,16 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.io.*;
-import javax.crypto.*;
+import java.io.UnsupportedEncodingException;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.SecretKey;
 import javax.crypto.Cipher;
-import java.security.spec.*;
-import javax.crypto.spec.*;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
+import javax.crypto.spec.PBEParameterSpec;
 import org.apache.commons.codec.binary.Base64;
+import java.security.spec.AlgorithmParameterSpec;
+import java.security.spec.KeySpec;
 
 /**	The encryption/decryption class to be used for saving tokens.  I recommend changing the encryption key for your own use.  This class uses code available at http://www.exampledepot.com/egs/javax.crypto/PassKey.html.  This library uses a proprietary API developed by Sun that may be removed in future releases.	**/
 

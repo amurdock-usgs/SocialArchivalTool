@@ -2,10 +2,17 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.awt.*;
-import javax.swing.*;
-import java.io.*;
-import java.awt.event.*;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
+import java.awt.Insets;
+import java.awt.Dimension;
+import java.awt.event.ComponentListener;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 /**	The ChangeArchives internal frame class.  This class will display a GUI for the user to change the location that the archives are saved as well as to move all the current archives to the new location.	**/
 

@@ -2,12 +2,21 @@ package code;
 
 /**	@author amurdock	**/
 
-import javax.swing.*;
-import java.awt.event.*;
-import java.awt.*;
-import java.util.*;
-import javax.swing.event.*;
-import java.io.*;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JMenuItem;
+import javax.swing.JDesktopPane;
+import javax.swing.JTextArea;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Insets;
+import java.awt.Toolkit;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**	SocialArchivalTool driver class.  Driver for the GUI built into the program, allowing for entry of new Twitter accounts to follow as well as offers help options.  On program start the default window to load is the UpdateArchives internal frame.  The reason for this is that the UpdateArchives frame will, well do as its name says.  You can read more on each of the internal frames and what they do in their respective comments.	**/
 
@@ -41,6 +50,12 @@ public class SocialArchivalTool extends JFrame implements ActionListener, Compon
 		desktop.setDragMode(JDesktopPane.OUTLINE_DRAG_MODE);
 		setResizable(true);
 		//End frame setup
+
+		options.ReadOptions();
+		if(options.GetUpdateMode() == true)
+		{
+			updateAndClose();
+		}
 
 		desktop.addComponentListener(this);
 
@@ -235,11 +250,6 @@ public class SocialArchivalTool extends JFrame implements ActionListener, Compon
 	**/
 	private static void createAndShowGUI()
 	{
-		options.ReadOptions();
-		if(options.GetUpdateMode() == true)
-		{
-			updateAndClose();
-		}
 		JFrame.setDefaultLookAndFeelDecorated(true);
 		SocialArchivalTool frame = new SocialArchivalTool();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

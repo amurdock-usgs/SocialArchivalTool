@@ -2,11 +2,13 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.util.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import java.io.*;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import java.awt.Insets;
+import java.awt.Dimension;
+import java.io.File;
+import java.awt.event.ComponentListener;
+import java.awt.event.ComponentEvent;
 
 /**	The Author internal frame class.  This class displays information about the author of this program and is executed from the menu in the driver class.	**/
 

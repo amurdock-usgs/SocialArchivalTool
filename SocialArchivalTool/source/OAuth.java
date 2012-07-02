@@ -2,13 +2,25 @@ package code;
 
 /**	@author amurdock	**/
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.util.Scanner;
-import org.scribe.builder.*;
-import org.scribe.builder.api.*;
-import org.scribe.model.*;
-import org.scribe.oauth.*; 
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.FileOutputStream;
+import org.scribe.builder.ServiceBuilder;
+import org.scribe.builder.api.TwitterApi;
+import org.scribe.model.Response;
+import org.scribe.model.Verb;
+import org.scribe.model.OAuthRequest;
+import org.scribe.model.Token;
+import org.scribe.model.Verifier;
+import org.scribe.oauth.OAuthService;
 
 /**	The OAuth class, used for all of the OAuth communication.  This class will have all the structures and function for communication through OAuth.	**/
 

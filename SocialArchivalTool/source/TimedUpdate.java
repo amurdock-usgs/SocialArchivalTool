@@ -5,7 +5,7 @@ package code;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import javax.swing.*;
+import javax.swing.JTextArea;
 
 /**	TimedUpdate function.  This function is designed to run continuously while the program is running and monitor the current time then compare it to the time given as a set update time.	**/
 

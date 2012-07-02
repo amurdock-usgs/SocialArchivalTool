@@ -2,9 +2,12 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.io.*;
-import java.awt.*;
-
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.io.FileInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**	FeedsLocation class.  This class is for including functions that will be implemented by multiple other classes, such as reading a common imput file.	**/
 

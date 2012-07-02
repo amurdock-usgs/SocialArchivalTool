@@ -2,11 +2,14 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.util.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import java.io.*;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import java.awt.Insets;
+import java.awt.Dimension;
+import java.awt.event.ComponentListener;
+import java.awt.event.ComponentEvent;
 
 /**	The instruction frame class.  This class is used to display an instruction set to help the user, it can be accessed by the menu or by turning on the associated variable in the options.txt file and it will run on startup.	**/
 

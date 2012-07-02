@@ -2,11 +2,17 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.Insets;
+import java.awt.Dimension;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 /**	Search class.  This class is designed to allow the user to search the archives for messages that fit the parameters.	**/
 

@@ -2,13 +2,24 @@ package code;
 
 /**	@author amurdock	**/
 
-//import java.util.*;
-import java.awt.*;
-import javax.swing.*;
-import java.io.*;
-import java.net.*;
-import java.awt.event.*;
-import javax.swing.event.*;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JButton;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
+import javax.swing.ListSelectionModel;
+import java.awt.Insets;
+import java.awt.Dimension;
+import java.awt.Container;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.FileInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**	The ViewAccounts internal frame class.  This class will display all of the accounts that this program follows as well as have buttons at the bottom to link to the AddAccounts and RemoveAccounts pages.	**/
 

@@ -2,12 +2,12 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.util.*;
-import java.awt.*;
-import javax.swing.*;
-import java.io.*;
-import java.awt.event.*;
-
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
 
 /**	The NewAccount internal frame class.  This class offers the user a interface to add user accounts to the list of Twitter accounts to follow.  Adding a new account will require authentication with Twitter.  OAuth authentication is done through the Scribe library.	**/
 

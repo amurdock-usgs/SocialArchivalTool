@@ -2,11 +2,22 @@ package code;
 
 /**	@author amurdock	**/
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import java.net.*;
-import java.io.*;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import java.net.URL;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.io.InputStream;
+import java.io.BufferedInputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.IOException;
+import java.awt.Insets;
+import java.awt.Dimension;
+import java.awt.event.ComponentListener;
+import java.awt.event.ComponentEvent;
 
 /**	The Changelog class.  This class is designed as a way to display the changelog in the program for the user	**/
 
