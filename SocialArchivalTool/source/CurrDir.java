@@ -26,7 +26,7 @@ public class CurrDir
 		{
 			System.err.println("Error: " + e.getMessage());
 		}
-		currDir = decodedPath.length() <= 16 ? decodedPath : decodedPath.substring(0, decodedPath.length() - 16); //Removes the "SocialArchivalTool.jar" from the path.
+		currDir = decodedPath.length() <= 22 ? decodedPath : decodedPath.substring(0, decodedPath.length() - 22); //Removes the "SocialArchivalTool.jar" from the path.
 	}
 
 	/**	GetCurrentDir function.  This funciton is designed to output the location of the jar file that is running.
